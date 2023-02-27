@@ -54,9 +54,23 @@ already start with New! return astring
 /*execise 1
 create a new STring taking first 3 chracter and adding them together
  */
-const makeNewString=(str)=>{
-    return str.length < 3 ? str : str.slice(0,3) + str.slice(-3)
+// const makeNewString=(str)=>{
+//     return str.length < 3 ? str : str.slice(0,3) + str.slice(-3)
 
-}
-console.log(makeNewString('abcdef'))
+// }
+// console.log(makeNewString('abcdef'))
+
+/*excersise 2
+write a javascript program to extract the first half string of even length
+*/
+// const firstHalf=(str)=>{
+//     return str.slice(0,Math.floor(str.length/2))
+
+// }
+// console.log(firstHalf('template'))
+// console.log(firstHalf('temp'))
+
+/*exercise 3
+write a program to concate strings except the first string
+*/
 
