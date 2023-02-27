@@ -73,4 +73,12 @@ write a javascript program to extract the first half string of even length
 /*exercise 3
 write a program to concate strings except the first string
 */
+// const concatinationString=(str1,str2)=>{
+//     return str1.slice(1)+ str2.slice(1)
 
+// }
+// console.log(concatinationString('abc','def'))
+const conString=(str)=>{
+    return str.slice(1);
+}
+console.log(conString("helllo"))
