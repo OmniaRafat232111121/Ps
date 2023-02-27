@@ -50,3 +50,13 @@ already start with New! return astring
 //   return str.indexOf('New!') === 0 ? str: ` New! First ${str}`
 // }
 // console.log(addNew('Hello'))
+//Part 2
+/*execise 1
+create a new STring taking first 3 chracter and adding them together
+ */
+const makeNewString=(str)=>{
+    return str.length < 3 ? str : str.slice(0,3) + str.slice(-3)
+
+}
+console.log(makeNewString('abcdef'))
+
