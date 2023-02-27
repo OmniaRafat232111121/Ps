@@ -78,7 +78,15 @@ write a program to concate strings except the first string
 
 // }
 // console.log(concatinationString('abc','def'))
-const conString=(str)=>{
-    return str.slice(1);
+// const conString=(str)=>{
+//     return str.slice(1);
+// }
+// console.log(conString("helllo"))
+/*excersice 4
+Given two number which is nearst number to 100 
+*/
+const closeTo100=(a,b)=>{
+    return (100-a) > (100-b) ? a :b;
 }
-console.log(conString("helllo"))
+console.log(closeTo100(40,90))
+console.log(closeTo100(90,10))
