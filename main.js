@@ -85,8 +85,79 @@ write a program to concate strings except the first string
 /*excersice 4
 Given two number which is nearst number to 100 
 */
-const closeTo100=(a,b)=>{
-    return (100-a) > (100-b) ? a :b;
+// const closeTo100=(a,b)=>{
+//     return (100-a) > (100-b) ? a :b;
+// }
+// console.log(closeTo100(40,90))
+// console.log(closeTo100(90,10))
+/*exercise 5=>>>>>>>> */
+// const countChars=(str,char)=>{
+//     return str.split(" ") .filter(ch=> ch === char ).length;
+// }
+// const count2TO4=(str,char)=>{
+//     return countChars(str,char) >=2 &&  countChars(str,char) <= 4 ;
+// }
+// console.log(count2TO4('ooh!',"o"))
+// console.log(count2TO4('oh!',"o"))
+
+
+
+/*part 3
+1)Write a JavaScript program to find the number of even digits in a an array of integers
+
+*/
+// const findEvenNumber=(arr)=>{
+//     return arr.filter((number)=>number%2 == 0).length;
+
+// }
+// console.log(findEvenNumber([1,2,3,4,5,8,3,1,1,5,1]))
+// console.log(findEvenNumber([5,1]))
+
+
+/*
+Write a JavaScript program to find the number of even values up to a given number
+
+*/ 
+// function even_digits(num) {
+//     var ctr = 0;
+//     while (num) {
+//       ctr += num % 2 === 0;
+//       num = Math.floor(num / 10);
+//     }
+//     return ctr;
+//   }
+// console.log(even_digits(12623));
+
+
+/*Write a JavaScript program to check whether a given array of integers is sorted in ascending
+order*/
+// const isAscending=(arr)=>{
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i+1] > arr[i]){
+//             return true;
+//         }
+//         else{
+//             return false
+//         }
+
+//     }
+// }
+// console.log(isAscending([1,2,5,6,10]))
+// console.log(isAscending([10,2,4]))
+
+/*get larget even number of an array*/
+// const largetEven=(array)=>{
+//     return Math.max(...array.filter(num=>num %2 ===0))
+// }
+// console.log(largetEven([1,4,5,3,9,10,11]))
+
+
+/*Write a JavaScript program to replace the first digit in a string (should contain at least one
+digit) with a $ character.*/
+/*abcd1abfff=abcd$abfff*/
+const replaceDigit=(string)=>{
+    return string.replace(/[0-9]/,'$')
+
+
 }
-console.log(closeTo100(40,90))
-console.log(closeTo100(90,10))
+console.log(replaceDigit('abcdef31abddjj'))
