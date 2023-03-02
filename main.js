@@ -155,9 +155,68 @@ order*/
 /*Write a JavaScript program to replace the first digit in a string (should contain at least one
 digit) with a $ character.*/
 /*abcd1abfff=abcd$abfff*/
-const replaceDigit=(string)=>{
-    return string.replace(/[0-9]/,'$')
+// const replaceDigit=(string)=>{
+//     return string.replace(/[0-9]/,'$')
 
 
-}
-console.log(replaceDigit('abcdef31abddjj'))
+// }
+// console.log(replaceDigit('abcdef31abddjj'))
+
+
+/*part 4*/
+/*
+Given a year report if it is a leap year
+
+*/
+// const isLeap=(year)=>{
+//     return year% 4 === 0;
+// }
+// console.log(isLeap(2024))
+
+
+
+// const matches = (obj, source) =>
+// Object.keys(source).every(key=>obj.hasOwnProperty(key))
+// console.log(matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); // true
+// console.log(matches({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
+// console.log(matches({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true }));
+
+// const objA={a:1,b:2,c:1};
+// const objB={a:1,b:1,c:1};
+// const objC={a:1,b:2,d:1};
+
+// const objectsEqual=(a,b)=>{
+//     // console.log(Object.keys(a));
+//     // console.log(Object.keys(b));
+//     return Object.keys(a).every(key=>b[key])
+
+
+// }
+// console.log(objectsEqual(objA,objB));
+
+
+// const paraCsv=(csvString)=>{
+//     return csvString.split('\n').map(row=>row.split(','))
+// }
+// const str=`
+//     abc,def,ghi
+//     jkl,mno,pqr
+//     stu,vwx,yza
+//     `
+
+// console.log(paraCsv(str))
+
+
+// const getRandomHexNumber=()=>{
+    
+//     return Math.floor(Math.random() * 16).toString(16);
+// }
+// const getRandomHexColor=()=>{
+//     return '#' +Array.from({length:6}).map(getRandomHexNumber).join("");
+// }
+// console.log(getRandomHexColor())
+// console.log(getRandomHexColor())
+// console.log(getRandomHexColor())
+// console.log(getRandomHexColor())
+/*exercise 5*/
+console.log([1,2,3,4,5].every(x=>x < 10));
