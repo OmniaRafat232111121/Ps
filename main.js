@@ -219,4 +219,26 @@ Given a year report if it is a leap year
 // console.log(getRandomHexColor())
 // console.log(getRandomHexColor())
 /*exercise 5*/
-console.log([1,2,3,4,5].every(x=>x < 10));
+// console.log([1,2,3,4,5].every(x=>x < 10));
+
+
+
+/*part 5*/
+/*ex1*/
+// const albeticOrder=(str)=>
+// str.split('').sort((a,b)=>{
+//     return a >b ? 1 : -1
+// })
+// .join("")
+
+
+// console.log(albeticOrder('javascript'))
+
+/*ex2*/
+// const countLetters=(str,letters=['a','e','i','o','u'])=>{
+//     return str
+//     .split("")
+//     .filter(s=>letters.indexOf(s) > -1)
+//     .length;
+// }
+// console.log(countLetters('abcde'))
